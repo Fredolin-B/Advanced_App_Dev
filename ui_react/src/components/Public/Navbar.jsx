@@ -23,10 +23,10 @@ const Navbar = () => {
     ]
   return (
     <>
-        <div className='h-[10vh] w-screen flex flex-row justify-center items-center'>
+        <div className='h-[10vh] w-screen flex flex-row justify-center items-center bg-gray-800 text-white'>
             <div className='w-[80%] h-full flex flex-row justify-center items-center'>
                 <div className='w-3/4'>
-                    TailWindCss
+                    AGrow
                     </div>
                 
                 <div className='w-3/12 flex flex-row justify-center'>

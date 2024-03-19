@@ -4,7 +4,7 @@
 
 .active
 {
-    color: black;
+    color: rgb(75, 251, 0);
     font-weight: bold;
 }
 
@@ -14,3 +14,102 @@
     height: 50%;
     margin-top: 17%;
 }
+
+@keyframes crop1 {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(10px, 10px) scale(1.2);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  @keyframes crop2 {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-10px, 10px) scale(1.2);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  @keyframes crop3 {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(10px, -10px) scale(1.2);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  @keyframes crop4 {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-10px, -10px) scale(1.2);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  .crops-animate {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  .animate-crop1 {
+    animation-name: crop1;
+  }
+  
+  .animate-crop2 {
+    animation-name: crop2;
+  }
+  
+  .animate-crop3 {
+    animation-name: crop3;
+  }
+  
+  .animate-crop4 {
+    animation-name: crop4;
+  }
+  
+  
+
+
+  @keyframes moveTractor {
+    0% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(120%);
+    }
+  }
+  
+  @keyframes moveCloud {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-tractor {
+    animation: moveTractor 15s linear infinite;
+  }
+  
+  .animate-cloud {
+    animation: moveCloud 20s linear infinite;
+  }
+  
