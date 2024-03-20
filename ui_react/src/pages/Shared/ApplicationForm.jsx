@@ -26,7 +26,7 @@ const ApplicationForm = () => {
         {/* Loan Options */}
         <h2 className="text-xl font-semibold mb-4">Welcome</h2>
         <ul className="space-y-2">
-          <li><div className="text-black-700 font-bold"><Link to='/plans'>Loan Plans</Link></div></li>
+          <li><div className="text-black-700 font-bold"><Link to='/loan'>About Us</Link></div></li>
           <li><div className="text-black-700 font-bold"><Link to='/apply'>Loan Application Form</Link></div></li>
           <li><div className="text-black-700 font-bold"><Link to='/profile'>Profile</Link></div></li>
           <li><div className="text-black-700 font-bold"><Link to='/login'>Logout</Link></div></li>

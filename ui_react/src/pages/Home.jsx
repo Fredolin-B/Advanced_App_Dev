@@ -14,7 +14,7 @@ const Home = () => {
         </p>
         <div
           className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded-full inline-block transition-colors duration-300"
-        ><Link to='/login'>
+        ><Link to='/apply'>
           Apply Now</Link>
         </div>
         

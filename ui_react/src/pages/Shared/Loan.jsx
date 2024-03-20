@@ -22,7 +22,7 @@ const Loan = () => {
         {/* Loan Options */}
         <h2 className="text-xl font-semibold mb-4">Welcome</h2>
         <ul className="space-y-2">
-          <li><div className="text-green-700 hover:text-green-900"><Link to='/plans'>Loan Plans</Link></div></li>
+          <li><div className="text-green-700 hover:text-green-900"><Link to='/loan'>About Us</Link></div></li>
           <li><div className="text-green-700 hover:text-green-900"><Link to='/apply'>Loan Application Form</Link></div></li>
           <li><div className="text-green-700 hover:text-green-900"><Link to='/profile'>Profile</Link></div></li>
           <li><div className="text-green-700 hover:text-green-900"><Link to='/login'>Logout</Link></div></li>
