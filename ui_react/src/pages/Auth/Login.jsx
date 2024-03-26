@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div className="h-[590px] flex items-center justify-center bg-gradient-to-br from-green-400 to-yellow-300 relative overflow-hidden">
+    <div className="h-screen flex items-center justify-center bg-gradient-to-br from-green-400 to-yellow-300 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
       <div className="crops-animate absolute top-[40%] left-[20%] w-10 h-10 bg-yellow-900 rounded-full opacity-50 animate-crop1"></div>
         <div className="crops-animate absolute top-[60%] left-[70%] w-10 h-10 bg-yellow-900 rounded-full opacity-50 animate-crop1"></div>
@@ -43,6 +43,7 @@ const Login = () => {
 
       <div className="bg-white p-4 rounded-lg shadow-lg z-10 w-[350px] h-[370px] mx-auto">
         <h1 className="text-xl font-bold text-green-800 mb-4">Login</h1>
+        
         <form onSubmit={handleLogin} className="w-[300px]">
           <div className="mb-2">
             <label htmlFor="email" className="block text-gray-700 font-bold mb-1">
@@ -73,7 +74,7 @@ const Login = () => {
               required
             />
           </div>
-
+          <br></br>
           <div className="flex items-center justify-between mb-2">
             {formData.email === 'admin@gmail.com' ? (
               <button
@@ -99,6 +100,7 @@ const Login = () => {
           </div>
 
                  <div>
+                  <br></br>
             <button
               type="button"
               className="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline transition-colors duration-300 w-full"

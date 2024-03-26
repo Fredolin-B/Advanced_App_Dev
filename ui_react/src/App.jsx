@@ -8,7 +8,9 @@ import Weblayout from './layouts/Weblayout'
 import { Suspense } from 'react'
 import Loan from './pages/Shared/Loan'
 import Terms from './pages/Terms'
-import LoanPlan from './pages/Admin/LoanPlan'
+import AdminProfile from './pages/Admin/AdminProfile'
+import Agreed from './pages/Admin/Agreed'
+import Rejected from './pages/Admin/Rejected'
 const Profile=lazy(()=>import('./pages/Shared/Profile'))
 const ApplicationForm=lazy(()=>import('./pages/Shared/ApplicationForm'))
 const Contact=lazy(()=>import('./pages/Contact'))
@@ -23,15 +25,18 @@ const App=()=> {
       <Route element={<Weblayout/>}>
         <Route path='/' element={<Home/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Register/>}/>
         <Route path='/loan' element={<Loan/>}/>
         <Route path='/apply' element={<ApplicationForm/>}/>
         <Route path='/terms' element={<Terms/>}/>
         <Route path='/profile' element={<Profile/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
-        <Route path='/plans' element={<LoanPlan/>}/>
       </Route>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/adminprofile' element={<AdminProfile/>}/>
+        <Route path='/agreed' element={<Agreed/>}/>
+        <Route path='/rejected' element={<Rejected/>}/>
+        
     </Routes>
     </Suspense>
     </BrowserRouter>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Register = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -18,7 +18,7 @@ const Register = () => {
   };
 
   return (
-    <div className="h-[598px] w-[100%] flex items-center justify-center bg-gradient-to-br from-green-400 to-yellow-300 relative overflow-hidden">
+    <div className="h-screen w-[100%] flex items-center justify-center bg-gradient-to-br from-green-400 to-yellow-300 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="crops-animate absolute top-[40%] left-[20%] w-10 h-10 bg-yellow-900 rounded-full opacity-50 animate-crop1"></div>
         <div className="crops-animate absolute top-[60%] left-[70%] w-10 h-10 bg-yellow-900 rounded-full opacity-50 animate-crop1"></div>
@@ -102,14 +102,13 @@ const Register = () => {
               type="submit"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline transition-colors duration-300 relative overflow-hidden"
             >
-              <span className="animate-login-button">Register</span>
+              <span className="animate-login-button"><Link to="/login">Register</Link></span>
             </button>
-            <a
-              href="#"
+            <div
               className="text-xs text-green-600 hover:text-green-800 font-semibold transition-colors duration-300"
             >
-              Already have an account?
-            </a>
+              <Link to="/login">Already have an account?</Link>
+            </div>
           </div>
         </form>
       </div>

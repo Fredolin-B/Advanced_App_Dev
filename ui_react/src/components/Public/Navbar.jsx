@@ -8,8 +8,7 @@ const Navbar = () => {
     const links = [
         { name: 'Home', path: '/' },
         { name: 'Contact', path: '/contact' },
-        { name: 'Login', path: '/login' },
-        { name: 'Register', path: '/register' }
+        { name: 'Logout', path: '/login' }
     ];
 
     return (
@@ -34,9 +33,11 @@ const Navbar = () => {
                 <div className='w-3/12 flex flex-row justify-center'>
                     <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                         {links.map((link, index) => (
-                            <NavLink key={index} to={link.path} className='cursor-pointer'>
-                                {link.name}
-                            </NavLink>
+                            <li key={index} className='cursor-pointer'>
+                                <NavLink to={link.path} activeClassName='text-blue-500' className='text-white'>
+                                    {link.name}
+                                </NavLink>
+                            </li>
                         ))}
                     </ul>
                 </div>
